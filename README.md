@@ -15,8 +15,12 @@ A Flutter application to control a turtlesim robot using a ROS2 websocket bridge
     ```bash
     ros2 launch rosbridge_server rosbridge_websocket_launch.xml
     ```
+2. **Start the turtlesim node:**
+   ```bash
+   ros2 run turtlesim turtlesim_node
+   ```
 
-2.  **Configure the IP Address**:
+4.  **Configure the IP Address**:
     Open the `lib/services/ros_service.dart` file and update the IP address to match the machine running the ROS2 websocket bridge.
 
     ```dart
@@ -25,7 +29,7 @@ A Flutter application to control a turtlesim robot using a ROS2 websocket bridge
     );
     ```
 
-3.  **Run the Flutter App**:
+5.  **Run the Flutter App**:
     Connect a device or start an emulator, and then run the following command in your terminal:
     ```bash
     flutter run
